@@ -1,0 +1,16 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+                {
+            "name": "Python: 当前文件",
+            "type": "python",
+            "request": "launch",
+            "program": "${file}",
+            "console": "integratedTerminal",
+            //"args":["--attack","Sign_OPT","--dataset","CIFAR10","--epsilon","0.01","--test_batch_size", "1","--model","cifar10","--data_root","D:\\zc\\path-sign-opt-attackbox-master2","--batch_size","1"]
+            //"args":["--attack","Sign_OPT","--dataset","Imagenet","--epsilon","0.01","--test_batch_size", "1","--model","resnet50","--data_root","D:\\zc\\path-sign-opt-attackbox-master2","--batch_size","1"]
+            "args":["--attack","Sign_OPT","--dataset","MNIST","--epsilon","0.01","--test_batch_size", "1","--model","mnist","--data_root","D:\\zc\\path-sign-opt-attackbox-master_lp","--batch_size","1"]
+        }
+    ]
+}
+//python test_attack.py --attack OPT_attack --dataset CIFAR10 --model_dir [your_model_dir] --epsilon 0.01 --test_batch_size 1
